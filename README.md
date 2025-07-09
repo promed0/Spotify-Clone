@@ -9,6 +9,10 @@ ________________________________________
 •	🔊 A custom Volume Slider styled to match Spotify’s sound bar
 •	🌙 A modern Dark Theme inspired by Spotify’s official UI
 ________________________________________
+📸 Preview
+![image](https://github.com/user-attachments/assets/7ca1c732-7e5d-4efb-94cb-8041ea48bf56)
+
+________________________________________
 🛠️ Tech Stack
 •	✅ HTML5
 •	✅ CSS3 (Flexbox, Grid, Media Queries)
