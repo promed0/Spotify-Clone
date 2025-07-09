@@ -1,0 +1,451 @@
+/* Base Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* Main Layout */
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #000000;
+    width: 340px;
+    border-radius: 1rem;
+    /* 16px */
+    margin-right: 0.5rem;
+    ;
+
+
+}
+
+/* Main Content */
+.main_content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+/* Music Player Bar */
+.musicplayer {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+/* Navigation */
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav_option:hover {
+    opacity: 1;
+
+}
+
+.nav_option i {
+    font-size: 1.25rem;
+}
+
+.nav_option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* Library Section */
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+
+}
+
+/* Library Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Library Option Images */
+.lib_option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+/* Icons */
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+/* Library Box */
+.lib_box {
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.5rem 1rem;
+}
+
+/* Box Primary Text */
+.box_p1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Box Secondary Text */
+.box_p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* Badge Button */
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+/* Dark Badge */
+.dark_bage {
+    background-color: black;
+    color: white;
+}
+
+/* Sticky Navigation Bar */
+.sticky_nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+/* Sticky Nav Icons */
+.sticky_nav_icons {
+    margin: 0.75rem;
+}
+
+/* Sticky Nav Options */
+.sticky_nav_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Item */
+.nav_item {
+    margin-right: 1rem;
+}
+
+/* Responsive: Hide on Small Screens */
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+/* Card */
+.card {
+    background-color: #232323;
+    width: 200px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Card Container */
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Card Image */
+.card_img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Card Title */
+.card_title {
+    font-weight: 600;
+}
+
+/* Card Info */
+.card_info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Divider Line */
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+/* Music Player Flex Layout */
+.musicplayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Album Section */
+.album {
+    width: 25%;
+}
+
+/* Player Section */
+.player {
+    width: 50%;
+}
+
+/* Control Section */
+.control {
+    width: 25%;
+}
+
+/* albums */
+/* Albums container */
+/* Albums Container */
+.albums {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+}
+
+/* Album artwork */
+/* Album Artwork */
+.album_picture {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+/* Album text info */
+/* Album Info */
+.album_info {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    color: #fff;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Album icon (e.g., heart or play) */
+/* Album Icon */
+.album_icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: auto;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+/* Album Icon Hover */
+.album_icon:hover {
+    opacity: 1;
+}
+
+/* Responsive behavior */
+/* Responsive: Albums Section */
+@media (max-width: 1000px) {
+    .albums .hide {
+        display: none;
+    }
+
+    .album_info {
+        font-size: 0.55rem;
+        padding: 0.3rem;
+    }
+
+    .album_picture {
+        margin-left: 0;
+    }
+}
+
+/* player */
+/* Player Controls */
+.player_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Player Control Icon */
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.85rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* Player Control Icon Hover */
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+/* Playback Bar */
+.playback_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Progress Bar */
+.progress_bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Progress Bar Track (Webkit) */
+.progress_bar::-webkit-slider-runnable-track {
+    border-radius: 100px;
+    background-color: #ddd;
+    height: 0.25rem;
+}
+
+/* Progress Bar Thumb (Webkit) */
+.progress_bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd650;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+/* control */
+/* Control Flex Layout */
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Icon container */
+/* Control Icon */
+.control_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 1.7rem;
+    padding: 0.2rem;
+    padding-bottom: .2rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+/* Control Icon Hover */
+.control_icon:hover {
+    opacity: 1;
+}
+
+/* Optional: for spacing or sizing icons */
+/* Icon Sizing Helper */
+.width {
+    padding-top: 0.3rem;
+    height: 2.5rem;
+    margin: 0.2rem;
+}
+
+/* Sound bar (volume slider) */
+/* Sound Bar (Volume Slider) */
+.sound_bar {
+    width: 40%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* WebKit slider thumb */
+/* Sound Bar Thumb (Webkit) */
+.sound_bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: #1bd650;
+    border-radius: 50%;
+    border: none;
+    margin-top: -6px;
+}
+
+/* Firefox slider thumb */
+/* Sound Bar Thumb (Firefox) */
+.sound_bar::-moz-range-thumb {
+    width: 1rem;
+    height: 1rem;
+    background-color: #1bd650;
+    border: none;
+    border-radius: 50%;
+}
